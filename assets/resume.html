@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Smriti | Civil Engineering Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #18191c;
+      --accent: #d97736;
+      --text-muted: #5b626a;
+      --border: #e2ded6;
+      --bg: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #f4f2eb;
+      color: #1a1a1a;
+      padding: 40px 20px;
+      line-height: 1.5;
+    }
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 50px 60px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      position: relative;
+    }
+    .print-actions {
+      max-width: 850px;
+      margin: 0 auto 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #1a1a1a;
+      color: #1a1a1a;
+    }
+    .header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--primary);
+    }
+    .title {
+      font-size: 16px;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+    .contact-info {
+      text-align: right;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      font-weight: 700;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .item {
+      margin-bottom: 16px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--primary);
+    }
+    .item-sub {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+    .item-desc {
+      font-size: 13.5px;
+      color: #333;
+      padding-left: 16px;
+    }
+    .item-desc li {
+      margin-bottom: 4px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .skill-category {
+      font-weight: 600;
+      font-size: 13.5px;
+      margin-bottom: 4px;
+    }
+    .skill-list {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .resume-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .print-actions {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-actions">
+    <a href="index.html" class="btn btn-outline">&larr; Back to Portfolio</a>
+    <button onclick="window.print()" class="btn">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="resume-container">
+    <header class="header">
+      <div>
+        <h1 class="name">SMRITI</h1>
+        <div class="title">CIVIL ENGINEERING STUDENT</div>
+      </div>
+      <div class="contact-info">
+        <div>Email: smriti.civil@example.com</div>
+        <div>Phone: +91 98765 43210</div>
+        <div>Location: India</div>
+        <div>LinkedIn: linkedin.com/in/smriti-civil</div>
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <p style="font-size: 13.5px; color: #333;">
+        Passionate Civil Engineering student with strong fundamentals in structural analysis, RCC & steel design, CAD drafting, and BIM modeling. Experienced in on-site construction supervision, quantity takeoff, and documentation. Committed to delivering innovative, safe, and sustainable infrastructure solutions.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="item">
+        <div class="item-header">
+          <span>Bachelor of Engineering (B.E.) in Civil Engineering</span>
+          <span>2022 &ndash; 2026</span>
+        </div>
+        <div class="item-sub">XYZ Institute of Technology & Management | CGPA: 8.45 / 10.0 (Till 6th Sem)</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Practical Work Experience</div>
+      <div class="item">
+        <div class="item-header">
+          <span>Site Engineer Intern</span>
+          <span>June 2024 &ndash; July 2024</span>
+        </div>
+        <div class="item-sub">ABC Constructions Pvt. Ltd. | Residential Project Site</div>
+        <ul class="item-desc">
+          <li>Assisted in on-site supervision and quality control for foundation and multi-story frame casting.</li>
+          <li>Prepared daily site progress reports (DPR), material reconciliation, and verified bar bending schedules (BBS).</li>
+          <li>Conducted quantity takeoffs and field measurements for contractor billing and subcontractor verification.</li>
+          <li>Coordinated with structural consultants to resolve reinforcement placement queries on site.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Key Engineering Projects</div>
+      <div class="item">
+        <div class="item-header">
+          <span>Residential Building Design (G+3)</span>
+          <span>AutoCAD, STAAD.Pro, Excel</span>
+        </div>
+        <div class="item-sub">Structural design of multi-family residential building per IS 456 & IS 875 load standards.</div>
+      </div>
+      <div class="item">
+        <div class="item-header">
+          <span>G+5 Building Structural Analysis & Design</span>
+          <span>STAAD.Pro, MS Excel</span>
+        </div>
+        <div class="item-sub">Analyzed seismic and wind loads per IS 1893:2016; designed moment-resisting frames and isolated footings.</div>
+      </div>
+      <div class="item">
+        <div class="item-header">
+          <span>BIM Model & Clash Detection &ndash; Academic Building</span>
+          <span>Autodesk Revit, Navisworks</span>
+        </div>
+        <div class="item-sub">Developed LOD 300 3D BIM model integrating architectural, structural, and MEP elements with zero critical clashes.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Technical Expertise</div>
+      <div class="grid-2">
+        <div>
+          <div class="skill-category">Structural & Analysis</div>
+          <div class="skill-list">Structural Analysis, RCC Design, Steel Design, Foundation Design, IS Codes (456, 800, 1893, 875)</div>
+        </div>
+        <div>
+          <div class="skill-category">CAD & BIM Software</div>
+          <div class="skill-list">AutoCAD (2D/3D), Autodesk Revit (Arch/Struct), Navisworks, SketchUp</div>
+        </div>
+        <div>
+          <div class="skill-category">Structural Engineering Software</div>
+          <div class="skill-list">STAAD.Pro, ETABS, MS Excel (Structural Sheets), MS Project</div>
+        </div>
+        <div>
+          <div class="skill-category">Site & Project Management</div>
+          <div class="skill-list">Bar Bending Schedule (BBS), BOQ & Quantity Takeoff, Site Quality Control, DPR</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Certifications</div>
+      <ul class="item-desc">
+        <li><strong>AutoCAD for Civil Engineers</strong> &ndash; Udemy (2023)</li>
+        <li><strong>Revit Architecture Essential Training</strong> &ndash; LinkedIn Learning (2023)</li>
+        <li><strong>Quantity Estimation and Costing Using Excel</strong> &ndash; Coursera (2024)</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
